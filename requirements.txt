@@ -1,0 +1,14 @@
+langchain==0.3.25
+langchain_community==0.3.25
+langchain_openai==0.3.24
+langchain-core==0.3.65
+langchain-huggingface==0.3.0
+langchain-text-splitters==0.3.8
+python-dotenv==1.1.0
+PyMuPDF==1.26.1
+faiss-cpu==1.11.0
+huggingface-hub==0.33.0
+sentence-transformers==4.1.0
+transformers==4.52.4
+uvicorn==0.34.3
+fastapi==0.115.13
