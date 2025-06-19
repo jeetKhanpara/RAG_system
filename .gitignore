@@ -1,3 +1,5 @@
 .venv
 ./faiss_index
 .main
+./components/__pycache__
+./config/__pycache__
