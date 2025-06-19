@@ -10,7 +10,7 @@ This project implements a complete RAG pipeline for document processing, embeddi
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/jeetKhanpara/RAG_system.git
 cd project_mi
 ```
 
