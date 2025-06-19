@@ -40,11 +40,15 @@ ollama pull llama2:7b # this will also take some time
 
 ### Main Configuration (`config/config.py`)
 ```python
+#place your pdf inside data folder and change the name here
 FILE_PATH = './data/10050-medicare-and-you_0.pdf'  # Your PDF file path
+
 EMBEDDING_MODEL_NAME = 'all-MiniLM-L6-v2'  # Embedding model
+
 EMBEDDING_MODEL_PATH = './faiss_index'     # Vector store path
+
 LLM_MODEL_NAME = 'llama2:7b '  # LLM model name
-QUERY = 'What are the important deadlines for Medicare enrollment?'  # Default query
+QUERY = 'What are the important deadlines for Medicare enrollment?'  # Default query, you can change your query here
 ```
 
 ## Usage
@@ -52,10 +56,8 @@ QUERY = 'What are the important deadlines for Medicare enrollment?'  # Default q
 ### Basic Usage
 ```bash
 # Run the main retrieval script
-python retrieval.py
-python generation.py
+python main.py
 
-Note: make sure to run ollama server while running generation.py file
+Note: make sure to run ollama server while running main.py file
 ```
-main.py file contains whole process in single phase
 
