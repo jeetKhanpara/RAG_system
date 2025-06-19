@@ -58,4 +58,4 @@ python generation.py
 Note: make sure to run ollama server while running generation.py file
 ```
 main.py file contains whole process in single phase
-```
+
