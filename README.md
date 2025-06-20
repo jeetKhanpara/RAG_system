@@ -53,17 +53,15 @@ QUERY = 'What are the important deadlines for Medicare enrollment?'  # Default q
 
 ## Usage
 
-### Basic Usage
-```bash
-# Run the main retrieval script
-python main.py
+### FastAPI Usage
 
-Note: make sure to run ollama server while running main.py file
+**Step 1: Start Ollama Server**
+```bash
+ollama serve
 ```
 
-### FastAPI Usage
+**Step 2: Start the FastAPI Server**
 ```bash
-# Start the FastAPI server
 python main.py
 ```
 
@@ -71,7 +69,7 @@ The server will start on `http://localhost:8000`
 
 **Access interactive API docs:** `http://localhost:8000/docs`
 
-**Test the API:**
+**Step 3: Test the API**
 ```bash
 python test_api.py
 ```
