@@ -65,27 +65,38 @@ Note: make sure to run ollama server while running main.py file
 ```bash
 # Start the FastAPI server
 python main.py
-
-# The server will start on http://localhost:8000
-# Access interactive API docs: http://localhost:8000/docs
-
-
-# Test the API
-python test_api.py
-
-# To change queries, edit the sample_questions list in test_api.py
-# to run test_api, you first need to run main.py and keep the fastapi server up
-# keep the ollama server up to generate query
-
-# Example API calls:
-# after running main file you will have retriever and llm model 
-# for Health check: GET http://localhost:8000/health
-
-# Ask question: POST http://localhost:8000/query
-#   Body: {"question": "Your question here"}
-
-# another endpoint of GET : http://localhost:8000/info
-# for more precise info go to: http://localhost:8000/docs
-
 ```
+
+The server will start on `http://localhost:8000`
+
+**Access interactive API docs:** `http://localhost:8000/docs`
+
+**Test the API:**
+```bash
+python test_api.py
+```
+
+**To change queries:** Edit the `sample_questions` list in `test_api.py`
+
+**Important Notes:**
+- You first need to run `main.py` and keep the FastAPI server running
+- Keep the Ollama server up to generate queries
+
+**Available Endpoints:**
+
+1. **Health Check**
+   - URL: `GET http://localhost:8000/health`
+   - Description: Check if retriever and LLM model are initialized
+
+2. **Ask Question**
+   - URL: `POST http://localhost:8000/query`
+   - Body: `{"question": "Your question here"}`
+
+3. **System Info**
+   - URL: `GET http://localhost:8000/info`
+   - Description: Get system configuration information
+
+4. **Interactive Documentation**
+   - URL: `http://localhost:8000/docs`
+   - Description: Swagger UI for testing all endpoints
 
