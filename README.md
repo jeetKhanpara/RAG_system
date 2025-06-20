@@ -48,7 +48,6 @@ EMBEDDING_MODEL_NAME = 'all-MiniLM-L6-v2'  # Embedding model
 EMBEDDING_MODEL_PATH = './faiss_index'     # Vector store path
 
 LLM_MODEL_NAME = 'llama2:7b '  # LLM model name
-QUERY = 'What are the important deadlines for Medicare enrollment?'  # Default query, you can change your query here
 ```
 
 ## Usage
