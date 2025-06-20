@@ -2,12 +2,12 @@ from langchain.prompts import PromptTemplate
 
 class Augmentate:
     def __init__(self,retrieved_docs,query):
-        self.context = retrieved_docs
+        self.retreived_docs = retrieved_docs
         self.query = query
 
     def create_context(self):
         prompt_context = ''
-        for i in self.context:
+        for i in self.retreived_docs:
             prompt_context += i.page_content
             prompt_context += "\n\n"
         return prompt_context
